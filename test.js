@@ -11,11 +11,12 @@ let totalNumberOfPetsText = "Total number of pets is:";
 let totalNumberOfPets = numberOfCats + numberOfDogs;
 
 
-console.log(totalNumberOfPetsText,totalNumberOfPets);
+console.log(totalNumberOfPetsText, totalNumberOfPets);
 
-// ================================================================================================
-// keeping the practice with variables, but, now we will use another type called *constant = const*
-// ================================================================================================
+// ============================================================
+// keeping the practice with variables, but...
+// Now we will use another type called: constant, *const* in JS
+// ============================================================
 
 const hoursPerDay = 24;
 const minutesPerHour = 60;
@@ -24,4 +25,23 @@ const secondsPerMinute = 60;
 let numberOfsecondsInADayText = "Number of seconds in a day is:"
 const secondsInADay = hoursPerDay * minutesPerHour * secondsPerMinute;
 
-console.log(numberOfsecondsInADayText,secondsInADay);
+
+console.log(numberOfsecondsInADayText, secondsInADay);
+
+
+// ============================================================================
+// The type of a variable or constant is the kind of data you store in it. 
+// In JavaScript, there are three main primitive types: number, string, boolean
+// ============================================================================
+
+// =================================================
+// we will start with *typeof*, which can help us...
+//show up the type of the variable we are using
+// =================================================
+
+let myAgeIs = "My age is:";
+let myAgeNumber = 35;
+
+
+console.log(typeof myAgeIs)
+console.log(typeof myAgeNumber);
