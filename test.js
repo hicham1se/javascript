@@ -7,11 +7,12 @@ numberOfCats += 5;
 let numberOfDogs = 1;
 numberOfDogs --;
 
-let totalNumberOfPetsText = "Total number of pets is:";
+let totalNumberOfPetsText = "Total number of pets is" + ":";
 let totalNumberOfPets = numberOfCats + numberOfDogs;
 
 
 console.log(totalNumberOfPetsText, totalNumberOfPets);
+
 
 // ===========================================
 // keeping the practice with variables, but...
@@ -51,3 +52,19 @@ console.log(typeof myAgeIs, "- for the text (My age is).");
 console.log(typeof myAgeNumber, "- for the number (35).");
 console.log(typeof married, "- for the text (true).");
 
+
+// =====================
+// Objects in javascript.
+// JavaScript objects are written in JavaScript Object Notation (JSON)...
+// a series of comma-separated key/value pairs between curly braces...
+// which you can store in a variable
+// =================================
+
+let account = {
+    name: "Abraham",
+    age: 35,
+    isWorking: true,
+};
+
+
+console.log(account);
