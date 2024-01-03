@@ -36,11 +36,12 @@ console.log(numberOfsecondsInADayText, secondsInADay);
 
 // =================================================
 // we will start with *typeof*, which can help us...
-// show up the type of the variable we are using.
-// ==============================================
+// show up the type of the variable we are using, string, number, or boolean.
+// ==========================================================================
 
 let myAgeIs = "My age is:";
 let myAgeNumber = 35;
+let married = true;
 let typesOfVariablesWeHaveText = "The types of variables we used in the exemple 'My age is: 35' are:";
 
 
@@ -48,3 +49,5 @@ console.log(myAgeIs, myAgeNumber);
 console.log(typesOfVariablesWeHaveText);
 console.log(typeof myAgeIs, "- for the text (My age is).");
 console.log(typeof myAgeNumber, "- for the number (35).");
+console.log(typeof married, "- for the text (true).");
+
