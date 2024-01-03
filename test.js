@@ -1,6 +1,7 @@
 // ===========================================================
 // let's start with a variable that stores numbers and strings
 // ===========================================================
+let lesson1 = "       ### Lesson 1 : Variables ###"
 
 let numberOfCats = 2;
 numberOfCats += 5;
@@ -11,6 +12,7 @@ let totalNumberOfPetsText = "Total number of pets is" + ":";
 let totalNumberOfPets = numberOfCats + numberOfDogs;
 
 
+console.log(lesson1);
 console.log(totalNumberOfPetsText, totalNumberOfPets);
 
 
@@ -57,8 +59,11 @@ console.log(typeof married, "- for the text (true).");
 // Objects in javascript.
 // JavaScript objects are written in JavaScript Object Notation (JSON)...
 // a series of comma-separated key/value pairs between curly braces...
-// which you can store in a variable
+// which you can store in a variable. To access the object you can call...
+// the variable name followed by a dot, and then the key of any of the...
+// key/value pairs you have defined.
 // =================================
+let lesson2 = "       ### Lesson 2 : Objects JSON ###"
 
 let account = {
     name: "Abraham",
@@ -67,4 +72,5 @@ let account = {
 };
 
 
-console.log(account);
+console.log(lesson2);
+console.log(account.name);
