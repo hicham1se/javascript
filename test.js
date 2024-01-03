@@ -41,7 +41,10 @@ console.log(numberOfsecondsInADayText, secondsInADay);
 
 let myAgeIs = "My age is:";
 let myAgeNumber = 35;
+let typesOfVariablesWeHaveText = "the types of variables we used in this exemple are:";
 
 
-console.log(typeof myAgeIs);
-console.log(typeof myAgeNumber);
+console.log(myAgeIs, myAgeNumber);
+console.log(typesOfVariablesWeHaveText);
+console.log(typeof myAgeIs, "- for the text (My age is).");
+console.log(typeof myAgeNumber, "- for the number (35).");
