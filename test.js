@@ -75,7 +75,11 @@ let account = {
 console.log(lesson2);
 console.log(account.name);
 
-// Now more Objects indepth with classes
+
+// =====================================
+// Now more Objects indepth with classes.
+// =====================================
+let lesson3 = "\n" + "### Lesson 3 : Classes in JS ###" + "\n" + "***";
 
 class Account {
     constructor(name, age, married) {
@@ -86,6 +90,25 @@ class Account {
 }
 
 
+console.log(lesson3);
 let myAccount = new Account("Dani", 36, true);
 let yourAccount = new Account("Fred", 29, false);
 console.log(myAccount.age, "\n", yourAccount);
+
+// =====================================================
+// Now let's jump to collections, we'll start with array.
+// To create an empty array and store it in a variable...
+// you use a pair of square brackets:
+// =====================================================
+let lesson4 = "\n" + "### Lesson 4 : Collections/Array ###" + "\n" + "***";
+
+let accountManager = ["Abraham", 38, false];
+
+// You can then access elements of that array by their index
+// (and the indexes start from [0]), means the name "Abraham" is called...
+// by [0], his age 38 is called by [1], and if he's married or not is...
+// called with [2]. we will call the age with [1].
+
+
+console.log(lesson4);
+console.log(accountManager[1]);
