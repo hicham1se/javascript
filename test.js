@@ -102,7 +102,7 @@ console.log(myAccount.age, "\n", yourAccount);
 // =====================================================
 let lesson4 = "\n" + "### Lesson 4 : Collections/Array ###" + "\n" + "***";
 
-let accountManager = ["Abraham", 38, false];
+let accountManager = ["Abraham", 39, false];
 
 // You can then access elements of that array by their index
 // (and the indexes start from [0]), means the name "Abraham" is called...
