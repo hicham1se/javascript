@@ -112,3 +112,50 @@ let accountManager = ["Abraham", 39, false];
 
 console.log(lesson4);
 console.log(accountManager[1]);
+
+// =============================================================
+// Now we will pass to the diffrence between Value and Reference.
+// =============================================================
+let lesson5 = "\n" + "### Lesson 5 : Value vs Reference ###" + "\n" + "***";
+
+// Premitive types like Strings, Numbers, and Booleans are passed by value.
+
+let nameOf = "Dani";
+let age = 39;
+let isWorking = true;
+
+// so if you want ot modify the isWorking boolean variable for example.
+
+isWorking = false;
+
+// the result will pass to *false*.
+
+let accounts = [nameOf, age, isWorking];
+
+
+console.log(lesson5);
+console.log(accounts);
+
+// but if you use an object or an array, you cannot pass the modification...
+// through value, but through reference.
+// let's create an object.
+
+let accountOf = {
+    nameOf: "Dani",
+    age: 56,
+    isWorking: false,
+}
+
+// let's change the value of nameOf key
+
+nameOf = "Tau";
+
+console.log(accountOf);
+
+// you can see that the nameOf Dani didn't change
+// because we passed the change though value, let's do it through reference.
+
+accountOf.nameOf = 'Tau';
+
+console.log(accountOf);
+
