@@ -231,18 +231,24 @@ if (validAccount) {
 // we will use more if/else statement, but this time with comparative expressions:
 
 let userPurchase = 2;
-let userGiftThreshold = 3;
+const userGiftThreshold = 3;
 
 if (userPurchase > userGiftThreshold) {
     console.log("You won a gift for free on any product under 300$, GET IT NOW!");
-} else {
+} else { 
     console.log("Buy three and take a gift for free, SHOP NOW!");
 }
 
 // in this example, we daclared the "userPurshase" variable that its
-// value is "2" product. then another variable "userGiftThreshold"
+// value is "2" product. then another constant variable *const* "userGiftThreshold"
 // that defines how many products you have to purchases in order to win a gift.
 // in this example "3" products. so, *if* the amount of product you have bought
 // is greater *>* than "3" you get the message "You won a gift for free on any
 // product under 300$, GET IT NOW!", but in this case the "userPurchase are less
 // than "3", so, the message is "Buy three and take a gift for free, SHOP NOW!".
+
+if (userPurchase > userGiftThreshold) {
+    console.log("You won a gift for free on any product under 300$, GET IT NOW!");
+} else if (userGiftThreshold > userPurchase); { 
+    console.log("Buy three and take a gift for free, SHOP NOW!");
+}
