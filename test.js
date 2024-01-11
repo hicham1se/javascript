@@ -116,7 +116,7 @@ console.log(accountManager[1]);
 // =============================================================
 // Now we will pass to the diffrence between Value and Reference.
 // =============================================================
-let lesson5 = "\n" + "### Lesson 5 : Value vs Reference ###" + "\n" + "***";
+let lesson5 = "\n" + "### Lesson 5 : Value vs Reference ###" + "\n" + "***" + "\n";
 
 // Premitive types like Strings, Numbers, and Booleans are passed by value.
 
@@ -152,10 +152,73 @@ nameOf = "Tau";
 
 console.log(accountOf);
 
-// you can see that the nameOf Dani didn't change
+// you can see that the nameOf *Dani* didn't change
 // because we passed the change though value, let's do it through reference.
 
 accountOf.nameOf = 'Tau';
 
 console.log(accountOf);
+
+// now you can see what we did here, and it was successful.
+
+// =========================================================
+// Arrays in JavaScript are very powerful and have lots of...
+// attributes and methods which are extremely useful.
+// =================================================
+
+// Here is a brief introduction to a handful of them
+
+let accountUser = ["Abraham", "Dani", "Tau"];
+
+// Counting elements: The *length* property of an array tells you...
+// how many elements there are in it:
+let accountNumber = accountUser.length;
+
+console.log(accountNumber);
+
+// Adding and removing elements: To add an element to the end of an...
+// array, use its  *push* method:
+
+accountUser.push("Fred");
+
+console.log(accountUser);
+
+// If you want to add your element at the beginning of the...
+// array instead of the end, use the  *unshift*  method:
+
+accountUser.unshift("lisa");
+
+console.log(accountUser);
+
+// To remove the last element of an array, call its *pop* method...
+// without passing any arguments:
+
+accountUser.pop();
+
+console.log(accountUser);
+
+// there you go! we removed *Fred* for you.
+
+
+// ************************************
+// ===============================
+// now we'll talk about *functions*
+// ===============================
+
+let lesson6 = "\n" + "***************" + "\n" 
++ "### Lesson 5 : Functions ###" + "\n" + "***" + "\n";
+
+console.log(lesson6);
+
+// we will start with the *if/else statement*
+
+let validAccount = true;
+
+if (validAccount) {
+    console.log("Welcome back!");
+} else {
+    console.log("Incorrect user-email or password");
+}
+
+// if the user entered the correct email and password, 
 
