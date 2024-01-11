@@ -210,7 +210,8 @@ let lesson6 = "\n" + "***************" + "\n"
 
 console.log(lesson6);
 
-// we will start with the *if/else statement*
+// we will start with the *if/else statement* which are like boolean premitive
+// data type:
 
 let validAccount = true;
 
@@ -220,5 +221,28 @@ if (validAccount) {
     console.log("Incorrect user-email or password");
 }
 
-// if the user entered the correct email and password, 
+// *if* the user entered the correct email and password
+//the  console will pass a welcoming message to the user "Welcome back!"
+// if he enters something *else* than the correct email and password,
+// he will be prompted with an error message "Incorrect user-email or password".
+// in this case as we decalred a variable "validAccound" with the value "true", so
+// the it is the right user "Welcome back!"
 
+// we will use more if/else statement, but this time with comparative expressions:
+
+let userPurchase = 2;
+let userGiftThreshold = 3;
+
+if (userPurchase > userGiftThreshold) {
+    console.log("You won a gift for free on any product under 300$, GET IT NOW!");
+} else {
+    console.log("Buy three and take a gift for free, SHOP NOW!");
+}
+
+// in this example, we daclared the "userPurshase" variable that its
+// value is "2" product. then another variable "userGiftThreshold"
+// that defines how many products you have to purchases in order to win a gift.
+// in this example "3" products. so, *if* the amount of product you have bought
+// is greater *>* than "3" you get the message "You won a gift for free on any
+// product under 300$, GET IT NOW!", but in this case the "userPurchase are less
+// than "3", so, the message is "Buy three and take a gift for free, SHOP NOW!".
