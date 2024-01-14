@@ -258,4 +258,26 @@ if (userPurchase > userGiftThreshold) {
 // for you have to give it a condition in order to work. so, we switched the
 // variables as if "userGiftThreshold" is greater than "userPurchase", than
 // the user purchased less than the required "3" items, which is true in this case
-// as the user bought just "2" items.
+// as the user bought just "2" items.100
+
+// and now we will pass to logical operators, AND, OR, NOT. those are
+// the most used logical operators in programming, let see how we can use them
+// inside a if/else statement.
+
+// let's say we have an app, in which we have multiple user accounts grades
+// (free-user, premium-user, and vip-users). We want to check whether the user
+// who is logging in is free, premium, or vip user. so we can do it like so:
+
+let userHaveAnAccount = false;
+let userHaveAPremiumAccount = true;
+let userHaveAVipAccount = false;
+
+if (userHaveAnAccount && userHaveAVipAccount) {
+    console.log("Welcome back! enjoy the latest Tom Cruise's movie 'Mission Impossible' with your vip subscription!");
+} else if (userHaveAnAccount && userHaveAPremiumAccount) {
+    console.log("welcome back to your account! enjoy the new episode 'The Binge' with your premium subscription!.");
+} else if (userHaveAnAccount) {
+    console.log("Welcome back! have a look on the latest series and movies we added")
+} else {
+    console.log("Please! connect to your account or, if you're new, choose to create one.")
+}
