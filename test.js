@@ -252,3 +252,10 @@ if (userPurchase > userGiftThreshold) {
 } else if (userGiftThreshold > userPurchase); { 
     console.log("Buy three and take a gift for free, SHOP NOW!");
 }
+
+// in this example, we used third form possible of the if/else statement
+// which is *else if* statement. but this one it more like anther *if* somehow,
+// for you have to give it a condition in order to work. so, we switched the
+// variables as if "userGiftThreshold" is greater than "userPurchase", than
+// the user purchased less than the required "3" items, which is true in this case
+// as the user bought just "2" items.
