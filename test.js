@@ -232,8 +232,11 @@ if (validAccount) {
 
 let userPurchase = 2;
 const userGiftThreshold = 3;
+let jackpot = 10;
 
-if (userPurchase > userGiftThreshold) {
+if (userPurchase == jackpot) {
+    console.log("YOU WON! 500$ gift card! USE IT RIGHT NOW!");
+} else if (userPurchase > userGiftThreshold) {
     console.log("You won a gift for free on any product under 300$, GET IT NOW!");
 } else { 
     console.log("Buy three and take a gift for free, SHOP NOW!");
@@ -247,11 +250,9 @@ if (userPurchase > userGiftThreshold) {
 // product under 300$, GET IT NOW!", but in this case the "userPurchase are less
 // than "3", so, the message is "Buy three and take a gift for free, SHOP NOW!".
 
-if (userPurchase > userGiftThreshold) {
-    console.log("You won a gift for free on any product under 300$, GET IT NOW!");
-} else if (userGiftThreshold > userPurchase); { 
-    console.log("Buy three and take a gift for free, SHOP NOW!");
-}
+// change "userPurchase" from the vakue "3" to the value "10" and see how the first
+// condition will pass!
+
 
 // in this example, we used third form possible of the if/else statement
 // which is *else if* statement. but this one it more like anther *if* somehow,
@@ -272,6 +273,8 @@ let userHaveAnAccount = false;
 let userHaveAPremiumAccount = true;
 let userHaveAVipAccount = false;
 
+// you can play with "true" or "false" values to pass diffrent outputs
+
 if (userHaveAnAccount && userHaveAVipAccount) {
     console.log("Welcome back! enjoy the latest Tom Cruise's movie 'Mission Impossible' with your vip subscription!");
 } else if (userHaveAnAccount && userHaveAPremiumAccount) {
@@ -281,3 +284,15 @@ if (userHaveAnAccount && userHaveAVipAccount) {
 } else {
     console.log("Please! connect to your account or, if you're new, choose to create one.")
 }
+
+// OK! let's explain...
+// if you have a "vip account" you will get access to all contents in the plateform.
+// if you have a "premium account" you will get access to to some content and you
+// still have to pay for others that still in cinema premiere.
+// if you have just a "free user account" you will get some content that are older
+// than 3 years.
+// in this case we have a "premium account" but we have to connect to our normal
+// account in order for the system to recognise our premium subscription.
+// TRY TO CHANGE "userHaveAnAccount" to "true" and see the result.
+
+ 
