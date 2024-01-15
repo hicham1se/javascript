@@ -295,4 +295,43 @@ if (userHaveAnAccount && userHaveAVipAccount) {
 // account in order for the system to recognise our premium subscription.
 // TRY TO CHANGE "userHaveAnAccount" to "true" and see the result.
 
+
+// I will add something on this, there's a diffrence between block scoped and
+// function scoped variables declaration, *let* and *const* are block scoped
+// variables, means they will be accessible if they're inside a block of code
+// *var* in the other hand is a function scope variable, it can be accessed even
+// if it's decalared inside a scope. Let's see:
+
+let premiumAccount = false;
+
+if (premiumAccount) {
+    let firstMessage = "You have up to 30% off 2024 movies prices!";
+} else {
+    let firstMessage = "enjoying your free account? see the benifits of a premium account!";
+}
+
+// console.log(firstMessage);
+
+// as you see an error is shown in the console, because the console cannot access
+// the "firstMessage" variable. let's correct that like this:
+
+// let premiumAccount = true; ***** to prevent overlapping between variable and
+// functions, we wont redaclare the variable in the beggining of this comment and
+// we will add an "s" to the *if* statement.
+
+let firstMessage = "";
+
+// this empty variable we added with name of variable inside the block will solve
+// the access problem.
+// now let's turn the variables inside the blocks into objects
+// I added a "s" to the key of the *if* statement because 
+
+if (premiumAccount) {
+    firstMessage = "You have up to 30% off 2024 movies prices!";
+} else {
+    firstMessage = "enjoying your free account? see the benifits of a premium account!";
+}
+
+console.log(firstMessage);
+
  
