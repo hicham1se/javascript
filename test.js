@@ -236,7 +236,7 @@ let jackpot = 10;
 
 if (userPurchase == jackpot) {
     console.log("YOU WON! 500$ gift card! USE IT RIGHT NOW!");
-} else if (userPurchase > userGiftThreshold) {
+} else if (userPurchase >= userGiftThreshold) {
     console.log("You won a gift for free on any product under 300$, GET IT NOW!");
 } else { 
     console.log("Buy three and take a gift for free, SHOP NOW!");
@@ -257,7 +257,7 @@ if (userPurchase == jackpot) {
 // in this example, we used third form possible of the if/else statement
 // which is *else if* statement. but this one it more like anther *if* somehow,
 // for you have to give it a condition in order to work. so, we switched the
-// variables as if "userGiftThreshold" is greater than "userPurchase", than
+// variables as if "userGiftThreshold" is greater than "userPurchasegit", than
 // the user purchased less than the required "3" items, which is true in this case
 // as the user bought just "2" items.100
 
