@@ -374,8 +374,13 @@ or mega-premium account! */
         break;
     default:
         console.log("Unknown account, please correct your data or create an account.");
-/* the result (line 366 in the console) will show the message of the normal account
-"Welcome to your account!" as we set previously the "firstUser"s "accountLevel" to
-"normal". */
 };
+/* the result will show the message of the normal account
+"Welcome to your account!" as we set previously the "firstUser"s "accountLevel" to
+"normal". so, in the future, if the "firstUser" will upgrade to "premium" or
+"mega-premium", our JS code block will be ready to show the right message to the
+same user.
+And another thing After the code to execute in each case, add the break statement.
+If you do not do this, JavaScript will keep executing the following cases
+(known as cascading) until it meets a break statement or the end of the switch. */
  
