@@ -334,6 +334,48 @@ if (premiumAccount) {
 
 console.log(firstMessage);
 
-// 
+// Now we will pass to the *switch* statement.
 
+// let's have a user objects
+
+let firstUser = {
+    name: 'Will Alexander',
+    age: 33,
+    accountLevel: 'normal'
+};
+
+let secondUser = {
+    name: 'Sarah Kate',
+    age: 21,
+    accountLevel: 'premium'
+};
+
+let thirdUser = {
+    name: 'Audrey Simon',
+    age: 27,
+    accountLevel: 'mega-premium'
+};
+
+// now, we can use the *if/else* statement to check which account a user have
+// and then send a message, but we will have to write a *else* statement for each
+// *if* statement. Here's where the *switch* statement comes.
+
+switch (firstUser.accountLevel) {
+/* the statement will check whether the "firstUser" is a normal, premium,
+or mega-premium account! */
+    case "normal":
+        console.log("Welcome to your account!");
+        break;
+    case "premium":
+        console.log("Welcome to your premium account!");
+        break;
+    case "mega-premium":
+        console.log("Welcome to your Mega-premium account!");
+        break;
+    default:
+        console.log("Unknown account, please correct your data or create an account.");
+/* the result (line 366 in the console) will show the message of the normal account
+"Welcome to your account!" as we set previously the "firstUser"s "accountLevel" to
+"normal". */
+};
  
